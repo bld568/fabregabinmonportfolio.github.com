@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio informatique : projets, compétences, stages et cybersécurité.">
+<title>Mon Portfolio | Informatique</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
+:root{--bleu:#17365b;--bleu-clair:#31577e;--fond:#f5f7fa;--blanc:#fff;--texte:#263445;--gris:#66758a;--bordure:#e1e7ee}
+body{font-family:Arial,Helvetica,sans-serif;background:var(--fond);color:var(--texte);line-height:1.7}
+a{color:inherit;text-decoration:none}
+header{background:var(--blanc);border-bottom:1px solid var(--bordure);position:sticky;top:0;z-index:100}
+.navigation{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 25px;min-height:70px}
+.logo{color:var(--bleu);font-size:18px;font-weight:bold;white-space:nowrap}
+.liens{display:flex;align-items:center;justify-content:flex-end;gap:4px}
+.liens a{color:#46566a;font-size:13px;padding:12px 9px;white-space:nowrap;border-bottom:2px solid transparent;transition:.2s}
+.liens a:hover{color:var(--bleu);border-bottom-color:var(--bleu);background:var(--fond)}
+.menu-mobile{display:none;background:white;border:1px solid var(--bordure);border-radius:5px;padding:8px 12px;color:var(--bleu);cursor:pointer;font-size:1rem}
+.page-accueil{min-height:75vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:70px 25px 35px;background:var(--fond);scroll-margin-top:85px}
+.accueil-contenu{max-width:760px;margin:auto}
+.sous-titre{color:var(--bleu-clair);font-size:13px;font-weight:bold;letter-spacing:3px}
+.page-accueil h1{color:var(--bleu);font-size:clamp(32px,5vw,54px);line-height:1.2;margin:22px 0}
+.description{max-width:650px;margin:0 auto 30px;color:var(--gris);font-size:17px;line-height:1.8}
+.bouton-accueil{display:inline-block;background:var(--bleu);color:white;padding:14px 24px;border-radius:5px;font-size:14px;font-weight:bold;transition:background .2s}
+.bouton-accueil:hover{background:var(--bleu-clair)}
+.accueil-bas{display:flex;justify-content:center;flex-wrap:wrap;gap:35px;border-top:1px solid #dce3eb;padding-top:22px;width:100%;max-width:760px;color:var(--gris);font-size:13px}
+.rubriques{max-width:1050px;margin:0 auto;padding:45px 24px}
+.titre-section{margin-bottom:20px}
+.titre-section h2{color:var(--bleu);font-size:1.65rem;margin-bottom:5px}
+.titre-section p{color:var(--gris)}
+.grille{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+.carte{background:var(--blanc);border:1px solid var(--bordure);border-radius:8px;padding:25px;transition:.2s;scroll-margin-top:100px}
+.carte:hover{border-color:#a9bbd0;transform:translateY(-2px)}
+.numero{display:inline-block;color:var(--bleu-clair);background:#edf2f8;border-radius:5px;padding:3px 10px;font-size:.8rem;font-weight:bold;margin-bottom:12px}
+.carte h3{color:var(--bleu);font-size:1.15rem;margin-bottom:8px}
+.carte p{color:var(--gris);font-size:.94rem;margin-bottom:16px}
+.lien-carte{color:var(--bleu-clair);font-size:.9rem;font-weight:bold}
+.lien-carte:hover{text-decoration:underline}
+footer{text-align:center;padding:25px;margin-top:20px;background:var(--blanc);border-top:1px solid var(--bordure);color:var(--gris);font-size:.85rem}
+@media(max-width:1200px){.navigation{flex-wrap:wrap;padding:15px 20px}.menu-mobile{display:block}.liens{display:none;width:100%;align-items:stretch;flex-direction:column}.liens.ouvert{display:flex}.liens a{padding:10px}}
+@media(max-width:600px){.page-accueil{min-height:65vh;padding:45px 20px 25px}.description{font-size:15px}.accueil-bas{gap:15px}.rubriques{padding:30px 15px}.grille{grid-template-columns:1fr}.carte{padding:20px}}
+</style>
+</head>
+<body>
+<header>
+<nav class="navigation" aria-label="Navigation principale">
+<a href="#accueil" class="logo">MON PORTFOLIO</a>
+<button class="menu-mobile" id="menu-mobile" aria-expanded="false" aria-controls="liens-navigation">☰ Menu</button>
+<div class="liens" id="liens-navigation">
+<a href="#cv">CV</a>
+<a href="#tableau">Tableau de synthèse</a>
+<a href="#veille">Veille informatique</a>
+<a href="#ia">IA / Deepfake</a>
+<a href="#stage1">Stage 1ère année</a>
+<a href="#stage2">Stage 2ème année</a>
+<a href="#guide">Guide de bonne conduite</a>
+</div>
+</nav>
+</header>
+<main>
+<section id="accueil" class="page-accueil">
+<div class="accueil-contenu">
+<span class="sous-titre">PORTFOLIO INFORMATIQUE</span>
+<h1>Bienvenue sur mon portfolio</h1>
+<p class="description">Découvrez mon parcours, mes compétences et les projets que j'ai réalisés au cours de ma formation. Ce portfolio regroupe également mes travaux de veille informatique, mes stages et mes connaissances en cybersécurité.</p>
+<a href="#cv" class="bouton-accueil">Découvrir mon portfolio →</a>
+</div>
+<div class="accueil-bas"><span>Mes projets</span><span>Mes compétences</span><span>Mes expériences</span></div>
+</section>
+<section id="rubriques" class="rubriques">
+<div class="titre-section"><h2>Mes rubriques</h2><p>Retrouvez ici l'ensemble de mes travaux et documents.</p></div>
+<div class="grille">
+<article class="carte" id="cv"><span class="numero">01</span><h3>CV</h3><p>Mon parcours scolaire, mes compétences, mes expériences et mes objectifs professionnels.</p><a class="lien-carte" href="#cv">Ajouter mon CV ici →</a></article>
+<article class="carte" id="tableau"><span class="numero">02</span><h3>Tableau de synthèse</h3><p>Un récapitulatif des compétences développées et des activités réalisées pendant ma formation.</p><a class="lien-carte" href="#tableau">Ajouter le tableau ici →</a></article>
+<article class="carte" id="veille"><span class="numero">03</span><h3>Veille informatique et cybersécurité</h3><p>Mes recherches, les actualités et les informations importantes concernant la cybersécurité.</p><a class="lien-carte" href="#veille">Ajouter ma veille ici →</a></article>
+<article class="carte" id="ia"><span class="numero">04</span><h3>Attaques autonomes par IA et deepfake</h3><p>Présentation des risques liés à l'intelligence artificielle, aux deepfakes et aux cyberattaques.</p><a class="lien-carte" href="#ia">Ajouter le projet ici →</a></article>
+<article class="carte" id="stage1"><span class="numero">05</span><h3>Stage de première année</h3><p>Présentation de mon entreprise d'accueil, des missions réalisées et des compétences acquises.</p><a class="lien-carte" href="#stage1">Ajouter mon rapport ici →</a></article>
+<article class="carte" id="stage2"><span class="numero">06</span><h3>Stage de deuxième année</h3><p>Retour sur mes missions, mes réalisations et mon évolution professionnelle.</p><a class="lien-carte" href="#stage2">Ajouter mon rapport ici →</a></article>
+<article class="carte" id="guide"><span class="numero">07</span><h3>Guide de bonne conduite</h3><p>Les bonnes pratiques à respecter en informatique : sécurité, confidentialité et comportement en ligne.</p><a class="lien-carte" href="#guide">Ajouter le guide ici →</a></article>
+</div>
+</section>
+</main>
+<footer><p>© <span id="annee"></span> Mon Portfolio — Tous droits réservés.</p></footer>
+<script>
+const boutonMenu=document.getElementById("menu-mobile");
+const navigation=document.getElementById("liens-navigation");
+boutonMenu.addEventListener("click",function(){const ouvert=navigation.classList.toggle("ouvert");boutonMenu.setAttribute("aria-expanded",ouvert)});
+navigation.querySelectorAll("a").forEach(function(lien){lien.addEventListener("click",function(){navigation.classList.remove("ouvert");boutonMenu.setAttribute("aria-expanded","false")})});
+document.getElementById("annee").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
